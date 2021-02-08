@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6565"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:text="Voting Bagaimana Tentang Aplikasi Kami"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnA1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/btnB1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/shape"
+        android:text="Puas"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnB1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnA1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape"
+        android:text="Kurang Puas"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnC1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnB1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape"
+        android:text="Tidak Puas"
+        android:textSize="25dp" />
+
+<!--    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="610dp"
+        android:layout_marginEnd="10dp"
+        android:text="Lihat Voting" />-->
+
+<!--    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="663dp"
+        android:text="Bersihkan Voting" />-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="663dp"
+        android:text="Keluar" />
+
+</RelativeLayout>
