@@ -4,24 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6565"
+    android:background="#1E1F31"
     tools:context=".MainActivity">
 
-
-    <TextView
+    <RelativeLayout
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="17dp"
-        android:layout_marginLeft="17dp"
-        android:layout_marginTop="15dp"
-        android:paddingLeft="10dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/headerbg"
+        android:padding="12dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
         android:text="Voting Bagaimana Tentang Aplikasi Kami"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp" />
+        android:textSize="30dp"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/btnA1"
@@ -30,6 +38,7 @@
         android:layout_alignStart="@+id/btnB1"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="44dp"
+        android:drawableLeft="@drawable/ic_smile__1_"
         android:background="@drawable/shape"
         android:text="Puas"
         android:textSize="25dp" />
@@ -42,6 +51,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:background="@drawable/shape"
+        android:drawableLeft="@drawable/ic_flat_mouth"
         android:text="Kurang Puas"
         android:textSize="25dp" />
 
@@ -53,12 +63,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:background="@drawable/shape"
+        android:drawableLeft="@drawable/ic_angry"
         android:text="Tidak Puas"
         android:textSize="25dp" />
 
     <Button
         android:id="@+id/btnPie"
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -66,18 +77,8 @@
         android:layout_marginEnd="27dp"
         android:text="Lihat Voting" />
 
-<!--    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="224dp"
-        android:layout_marginTop="663dp"
-        android:text="Bersihkan Voting" />-->
-
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
