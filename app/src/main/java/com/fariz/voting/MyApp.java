@@ -14,7 +14,7 @@ public class MyApp extends Application {
         super.onCreate();
         mInstance=this;
 
-        DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(this,"votea-db");
+        DaoMaster.DevOpenHelper helper = new DaoMaster.DevOpenHelper(this,"votre-db");
         Database db =  helper.getWritableDb();
         daoSession = new DaoMaster(db).newSession();
     }
