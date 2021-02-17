@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button button3;
     private Button button4;
     private Button button5;
+    private Button exit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,12 +48,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button3=(Button)findViewById(R.id.btnC1);
         button4=(Button)findViewById(R.id.btnPie);
         button5=(Button)findViewById(R.id.btnD1);
+        exit=(Button)findViewById(R.id.btnExit);
 
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
         button5.setOnClickListener(this);
+        exit.setOnClickListener(this);
 
     }
 
@@ -79,6 +82,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 user.setPilihan(button5.getText().toString());
                 userDao.insert(user);
                 Toast.makeText(this,"Berhasil Memilih", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.btnExit:
+                startActivity(new Intent(MainActivity.this, Exit.class));
                 break;
             case R.id.btnPie:
                 startActivity(new Intent(MainActivity.this, PieChart.class));

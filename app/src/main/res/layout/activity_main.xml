@@ -114,6 +114,7 @@
         android:paddingLeft="10dp" />
 
     <Button
+        android:id="@+id/btnExit"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
