@@ -1,5 +1,6 @@
 package com.fariz.voting;
 
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -17,6 +18,7 @@ public class PieChart extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_pie_chart);
 
         com.github.mikephil.charting.charts.PieChart pieChart = findViewById(R.id.piechart);
