@@ -11,11 +11,18 @@ public class User {
     private Long id;
     @NotNull
     private String pilihan;
+    @NotNull
+    private String tanggal;
+    @NotNull
+    private String jam;
 
-    @Generated(hash = 808936407)
-    public User(Long id, @NotNull String pilihan) {
+    @Generated(hash = 195912910)
+    public User(Long id, @NotNull String pilihan, @NotNull String tanggal,
+            @NotNull String jam) {
         this.id = id;
         this.pilihan = pilihan;
+        this.tanggal = tanggal;
+        this.jam = jam;
     }
 
     @Generated(hash = 586692638)
@@ -36,5 +43,21 @@ public class User {
 
     public void setPilihan(String pilihan) {
         this.pilihan = pilihan;
+    }
+
+    public String getTanggal() {
+        return tanggal;
+    }
+
+    public void setTanggal(String tanggal) {
+        this.tanggal = tanggal;
+    }
+
+    public String getJam() {
+        return jam;
+    }
+
+    public void setJam(String jam) {
+        this.jam = jam;
     }
 }

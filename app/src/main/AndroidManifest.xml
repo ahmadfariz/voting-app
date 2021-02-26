@@ -10,8 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Voting">
-        <activity android:name=".Test" android:screenOrientation="landscape"></activity>
-        <activity android:name=".PieChart" android:screenOrientation="landscape" />
+        <activity android:name=".PieChart" android:screenOrientation="landscape"></activity>
         <activity android:name=".MainActivity" android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
